@@ -1,0 +1,28 @@
+pipeline {
+agent any 
+stages {
+  stage ("build") {
+    steps {
+    echo("Building Code")
+    class Solution(object):
+    def twoSum(self, nums, target):
+            """
+	            :type nums: List[int]
+		            :type target: int
+			            :rtype: List[int]
+				            """
+    }
+    stages {
+  stage ("test") {
+    steps {
+    echo("Testing Code")
+    }
+stages {
+  stage ("Deploy") {
+    steps {
+    echo("Deploying Code")
+    }
+
+   }
+  } 
+ }
