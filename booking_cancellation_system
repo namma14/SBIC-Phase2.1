@@ -1,6 +1,6 @@
 # writing a prog for booking cancellation
 class booking:
-global final_seats
+        global final_seats
         final_seats=[]
     def seatbooking(self,book_seatno):
         print ("final seats are",final_seats) 
