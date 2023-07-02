@@ -1,7 +1,7 @@
 # writing a prog for booking cancellation
 class booking:
-        global final_seats
-        final_seats=[]
+    global final_seats
+    final_seats=[]
     def seatbooking(self,book_seatno):
         print ("final seats are",final_seats) 
         print(type(final_seats))
@@ -17,7 +17,7 @@ class booking:
                 print("**********************************")
 
                 final_seats.append(book_seatno)
-                print(final_seats)
+                print("Booked Seats are: ",final_seats)
             else:
                 print("Enter a valid Seat No")
         else:
@@ -25,9 +25,10 @@ class booking:
         return final_seats
         
     def cancellation(self,seatno):
-        avaiable_seats = z
-        print(avaiable_seats)
-        if seatno in book.seats:
+        print("seats available for cancellation", final_seats)
+        # cancellationseat=int(input("Select seat for cancellation from booked seats",final_seats))
+        print("Seats available for Booking",z)
+        if seatno in final_seats:
             print(f"Cancellation of Ticket.No for train {book.train_name} is confirmed.")
             print(f"Seat No {seatno} is available for booking")
             book.seats.append(seatno)
@@ -40,7 +41,12 @@ class booking:
 book = booking()
 book.seats = [1,2,3,4,5,6,7]
 book.train_name = "Rajdhani 14034"
+book.seatbooking(1)
+book.seatbooking(2)
+book.seatbooking(3)
 book.seatbooking(4)
 book.seatbooking(5)
-# book.cancellation(4)
+book.seatbooking(6)
+book.seatbooking(7)
+book.cancellation(4)
 
